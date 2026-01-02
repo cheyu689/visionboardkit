@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyword Collections - Vision Board</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f9fafb;
+    }
+    h1 { color: #dc2626; margin-bottom: 10px; }
+    .subtitle { color: #6b7280; margin-bottom: 30px; }
+    .theme-section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .theme-title {
+      font-size: 1.4em;
+      color: #1f2937;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    .emoji { font-size: 1.8em; margin-right: 10px; }
+    .keywords-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 15px;
+    }
+    .keyword-tag {
+      background: #fef2f2;
+      color: #dc2626;
+      padding: 8px 16px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      font-weight: 500;
+      border: 1px solid #fecaca;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .keyword-tag:hover {
+      background: #dc2626;
+      color: white;
+      transform: translateY(-2px);
+    }
+    .keyword-tag.copied {
+      background: #059669;
+      color: white;
+      border-color: #059669;
+    }
+    .affirmations {
+      background: #fef2f2;
+      padding: 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      border-left: 4px solid #dc2626;
+    }
+    .affirmations h4 { margin-bottom: 10px; color: #dc2626; }
+    @media print {
+      body { background: white; }
+      .keyword-tag:hover { transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Vision Board Keyword Collections</h1>
+  <p class="subtitle">Click any keyword to copy it, or use these as inspiration for your vision board affirmations and goals</p>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Career</span> Professional Growth Keywords</h2>
+    <div class="keywords-grid">
+      <span class="keyword-tag" onclick="copyKeyword(this)">Promotion</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Leadership</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Entrepreneurship</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Passive Income</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Remote Work</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Networking</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Skills</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Certification</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Dream Job</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Side Hustle</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Executive</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Innovation</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Strategy</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Mentorship</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Growth</span>
+    </div>
+    <div class="affirmations">
+      <h4>Sample Affirmations:</h4>
+      <ul style="margin-top: 10px; padding-left: 20px;">
+        <li>"I am a respected leader in my industry"</li>
+        <li>"My career is advancing faster than I imagined"</li>
+        <li>"I attract opportunities for professional growth"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Money</span> Financial Abundance Keywords</h2>
+    <div class="keywords-grid">
+      <span class="keyword-tag" onclick="copyKeyword(this)">Financial Freedom</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Savings</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Investments</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Passive Income</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Debt Free</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Emergency Fund</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Real Estate</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Stocks</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Budget</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Wealth</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Abundance</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Prosperity</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Assets</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Freedom</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Security</span>
+    </div>
+    <div class="affirmations">
+      <h4>Sample Affirmations:</h4>
+      <ul style="margin-top: 10px; padding-left: 20px;">
+        <li>"Money flows to me easily and frequently"</li>
+        <li>"I am financially free and secure"</li>
+        <li>"My wealth grows every day"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Health</span> Wellness Keywords</h2>
+    <div class="keywords-grid">
+      <span class="keyword-tag" onclick="copyKeyword(this)">Fitness</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Mental Health</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Self-Care</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Nutrition</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Sleep</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Yoga</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Meditation</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Energy</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Strength</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Balance</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Vitality</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Wellness</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Active</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Nourished</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Peaceful</span>
+    </div>
+    <div class="affirmations">
+      <h4>Sample Affirmations:</h4>
+      <ul style="margin-top: 10px; padding-left: 20px;">
+        <li>"I am healthy, strong, and full of energy"</li>
+        <li>"My body is capable of amazing things"</li>
+        <li>"I honor my body with healthy choices"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Relationship</span> Love & Connection Keywords</h2>
+    <div class="keywords-grid">
+      <span class="keyword-tag" onclick="copyKeyword(this)">Love</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Partnership</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Communication</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Trust</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Family</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Friendship</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Self-Love</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Boundaries</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Quality Time</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Connection</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Intimacy</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Support</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Understanding</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Appreciation</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Harmony</span>
+    </div>
+    <div class="affirmations">
+      <h4>Sample Affirmations:</h4>
+      <ul style="margin-top: 10px; padding-left: 20px;">
+        <li>"I am worthy of love and respect"</li>
+        <li>"My relationships are filled with joy and understanding"</li>
+        <li>"I attract loving and supportive people"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Study</span> Learning Keywords</h2>
+    <div class="keywords-grid">
+      <span class="keyword-tag" onclick="copyKeyword(this)">Learning</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Graduation</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Skills</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Knowledge</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Languages</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Reading</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Focus</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Discipline</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Growth Mindset</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Achievement</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Excellence</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Mastery</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Wisdom</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Curiosity</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Dedication</span>
+    </div>
+    <div class="affirmations">
+      <h4>Sample Affirmations:</h4>
+      <ul style="margin-top: 10px; padding-left: 20px;">
+        <li>"I am a lifelong learner"</li>
+        <li>"My mind absorbs knowledge effortlessly"</li>
+        <li>"I achieve my learning goals with ease"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Travel</span> Adventure Keywords</h2>
+    <div class="keywords-grid">
+      <span class="keyword-tag" onclick="copyKeyword(this)">Adventure</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Beach</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Mountains</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Europe</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Asia</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Road Trip</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Flight</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Exotic</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Culture</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Exploration</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Wanderlust</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Freedom</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Discovery</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Journey</span>
+      <span class="keyword-tag" onclick="copyKeyword(this)">Memories</span>
+    </div>
+    <div class="affirmations">
+      <h4>Sample Affirmations:</h4>
+      <ul style="margin-top: 10px; padding-left: 20px;">
+        <li>"I explore the world freely and joyfully"</li>
+        <li>"New adventures await me"</li>
+        <li>"I create beautiful memories everywhere I go"</li>
+      </ul>
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; padding: 25px; background: #fef2f2; border-radius: 12px; border: 2px solid #dc2626;">
+    <h3>💡 How to Use These Keywords</h3>
+    <ul style="margin-top: 15px; padding-left: 20px;">
+      <li><strong>Click to copy:</strong> Any keyword can be copied with one click</li>
+      <li><strong>Add to your board:</strong> Use as text elements, captions, or focal points</li>
+      <li><strong>Create affirmations:</strong> Combine keywords into powerful "I am" statements</li>
+      <li><strong>Mix and match:</strong> Don't limit yourself to one theme's keywords</li>
+    </ul>
+  </div>
+
+  <script>
+    function copyKeyword(element) {
+      const keyword = element.textContent;
+      navigator.clipboard.writeText(keyword).then(() => {
+        element.classList.add('copied');
+        const originalText = element.textContent;
+        element.textContent = 'Copied!';
+        setTimeout(() => {
+          element.classList.remove('copied');
+          element.textContent = originalText;
+        }, 1500);
+      });
+    }
+  </script>
+</body>
+</html>

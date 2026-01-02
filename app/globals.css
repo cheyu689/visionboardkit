@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+  }
+
+  * {
+    /* border-border removed - not a default Tailwind class */
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+/* 打印样式 */
+@media print {
+  body {
+    @apply bg-white;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+}
+
+/* 隐藏打印时不需要的内容 */
+@media print {
+  nav,
+  footer,
+  button:not(.print-button),
+  a:not(.print-link) {
+    display: none !important;
+  }
+}

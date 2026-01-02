@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Prompt Collection - Vision Board</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      background: #f9fafb;
+    }
+    h1 { color: #7c3aed; margin-bottom: 10px; }
+    .subtitle { color: #6b7280; margin-bottom: 30px; }
+    .theme-section {
+      background: white;
+      padding: 25px;
+      margin-bottom: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .theme-title {
+      font-size: 1.4em;
+      color: #1f2937;
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #e5e7eb;
+    }
+    .prompt {
+      background: #f9fafb;
+      padding: 12px 15px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border-left: 3px solid #7c3aed;
+      font-family: 'Courier New', monospace;
+      font-size: 0.95em;
+    }
+    .emoji { font-size: 1.5em; margin-right: 8px; }
+    .copy-btn {
+      background: #7c3aed;
+      color: white;
+      border: none;
+      padding: 6px 12px;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 0.85em;
+      float: right;
+    }
+    .copy-btn:hover { background: #6d28d9; }
+    @media print {
+      body { background: white; }
+      .copy-btn { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <h1>AI Image Prompts for Vision Boards</h1>
+  <p class="subtitle">Copy these prompts into AI image generators (Midjourney, DALL-E, Stable Diffusion) to create stunning vision board elements</p>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Career</span> Professional Growth</h2>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Professional standing in modern office with city skyline view at golden hour, cinematic lighting, photorealistic, 4k
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Inspirational workspace with laptop and vision board on wall, natural lighting, minimalist aesthetic, warm tones
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Leadership team collaboration in bright open office, diverse group, professional photography, depth of field
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Modern entrepreneur working on laptop in coffee shop, blurred background, warm cinematic lighting, motivational atmosphere
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Health</span> Wellness & Fitness</h2>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Peaceful yoga scene at sunrise on mountain peak, meditation pose, soft morning light, serene atmosphere, wide angle
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Healthy meal prep aesthetic arrangement, colorful vegetables and fruits, natural lighting, top-down view, food photography
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Person meditating in nature with mountains in background, mindfulness, golden hour lighting, peaceful ambiance
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Fresh fitness gym with modern equipment, motivational posters, bright lighting, energetic atmosphere, ultra wide
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Money</span> Financial Abundance</h2>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Piggy bank with growing plant symbolizing financial growth, concept art, soft lighting, pastel colors, illustration style
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Modern minimalist home office with success imagery, clean aesthetic, natural light, inspirational environment
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Abstract representation of financial growth and abundance, upward trending arrows, golden and green color palette
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Diverse group of successful professionals, achievement celebration, confetti, joyful expressions, professional photography
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Relationship</span> Love & Connection</h2>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Couple watching sunset together on beach, romantic silhouette, golden hour, dreamy atmosphere, cinematic
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Cozy home scene with warmth and connection, family gathering, soft lighting, intimate atmosphere, lifestyle photography
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Friends laughing and enjoying outdoor activity together, genuine happiness, natural lighting, candid moment
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Wedding or commitment ceremony scene, celebration of love, floral decorations, soft focus, romantic ambiance
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Study</span> Learning & Growth</h2>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Cozy study nook with books and warm lighting, inviting atmosphere, organized desk, plants, productivity aesthetic
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Graduation cap with inspirational background, confetti celebration, achievement, bright colors, festive atmosphere
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Library aesthetic with natural light and plants, rows of books, peaceful study environment, wide angle shot
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Student taking notes in modern classroom, focused learning, bright environment, educational atmosphere
+    </div>
+  </div>
+
+  <div class="theme-section">
+    <h2 class="theme-title"><span class="emoji">Travel</span> Adventure & Exploration</h2>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Hot air balloon over scenic landscape at sunrise, adventure perspective, vast sky, peaceful and inspiring, 4k
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Tropical beach paradise at golden hour, crystal clear water, palm trees, dream vacation destination, aerial view
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Mountain vista with hiking trail and clear sky, adventure awaits, fresh snow, vast landscape, ultra wide
+    </div>
+    <div class="prompt">
+      <button class="copy-btn" onclick="copyToClipboard(this)">Copy</button>
+      Charming European street cafe scene, travel destination, warm lighting, cultural atmosphere, lifestyle photography
+    </div>
+  </div>
+
+  <div style="margin-top: 30px; padding: 20px; background: #f3e8ff; border-radius: 8px; border: 2px solid #7c3aed;">
+    <h3>💡 Pro Tips for Better AI Images</h3>
+    <ul style="margin-top: 10px; padding-left: 20px;">
+      <li>Add specific style descriptors: "photorealistic", "illustration", "watercolor", "minimalist"</li>
+      <li>Specify lighting: "golden hour", "natural light", "cinematic lighting", "soft glow"</li>
+      <li>Include camera details: "depth of field", "wide angle", "macro shot", "4k resolution"</li>
+      <li>Set the mood: "serene", "energetic", "romantic", "motivational", "peaceful"</li>
+    </ul>
+  </div>
+
+  <script>
+    function copyToClipboard(btn) {
+      const promptText = btn.parentElement.textContent.replace('Copy', '').trim();
+      navigator.clipboard.writeText(promptText).then(() => {
+        const originalText = btn.textContent;
+        btn.textContent = 'Copied!';
+        btn.style.background = '#10b981';
+        setTimeout(() => {
+          btn.textContent = originalText;
+          btn.style.background = '#7c3aed';
+        }, 2000);
+      });
+    }
+  </script>
+</body>
+</html>
